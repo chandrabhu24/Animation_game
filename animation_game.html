@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Animation  with dynamic hyml</title>
+<script language="javascript">
+
+var pos1=-95;
+var pos2=-95;
+var pos3=-95;
+  var speed1 = Math.floor(Math.random()*10)+2;
+  var speed2 = Math.floor(Math.random()*10)+2;
+  var speed3 = Math.floor(Math.random()*10)+2;
+  fuction next(){
+                      pos1+=speed1;
+					  pos2+=speed2;
+					  pos3+=speed3;
+					  if(pos1> 795) pos1=-95;
+					  if(pos2> 795) pos2=-95;
+					  if(pos3> 795) pos3=-95;
+					  document.getdocumentById("mouse1").style.left=pos1;
+					  document.getdocumentById("mouse2").style.left=pos2;
+					  document.getdocumentById("mouse3").style.left=pos3;
+					  window.setTimeout("next();",10);
+					  }
+ </script>
+</head>
+<body onLoad="next();">
+<h1>Animation game with dynamic HTML<h1>
+<hr>
+<div Id ="mouse1" style="position:absolute; left:0; top:100; width:100; height:100; visibility:show">
+     <img src="animation_link" width=100 height=100 alt="" border="0"></div>
+	 
+	 <div Id ="mouse2" style="position:absolute; left:0; top:200; width:100; height:100; visibility:show">
+     <img src="animation_link" width=100 height=100 alt="" border="0"></div>
+	 
+	 <div Id ="mouse3" style="position:absolute; left:0; top:300; width:100; height:100; visibility:show">
+     <img src="animationz_link" width=100 height=100 alt="" border="0"></div>
+	 //IN PROGESS
+	 </div>
+	 </body>
+	 </html>
+	 
+					  
+					  
+					  
